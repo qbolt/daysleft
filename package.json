@@ -1,0 +1,31 @@
+{
+  "name": "daysleft",
+  "version": "0.0.0",
+  "description": "A module for getting the days left until a given date",
+  "license": "MIT",
+  "repository": "qbolt/daysleft",
+  "author": {
+    "name": "Quinton Bolt",
+    "email": "bolt.quinton@gmail.com",
+    "url": "quintonbolt.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "moment": "^2.20.1"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "xo": "^0.18.2"
+  }
+}
