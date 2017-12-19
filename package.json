@@ -19,7 +19,14 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "days",
+	"left",
+	"daysleft",
+	"remaining",
+	"how",
+	"long",
+	"moment",
+	"time"
   ],
   "dependencies": {
     "moment": "^2.20.1"
