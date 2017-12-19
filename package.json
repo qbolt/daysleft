@@ -1,6 +1,6 @@
 {
   "name": "daysleft",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A module for getting the days left until a given date",
   "license": "MIT",
   "repository": "qbolt/daysleft",
@@ -20,13 +20,13 @@
   ],
   "keywords": [
     "days",
-	"left",
-	"daysleft",
-	"remaining",
-	"how",
-	"long",
-	"moment",
-	"time"
+    "left",
+    "daysleft",
+    "remaining",
+    "how",
+    "long",
+    "moment",
+    "time"
   ],
   "dependencies": {
     "moment": "^2.20.1"
