@@ -21,3 +21,10 @@ test('moment', t => {
 	t.is(m(moment()), 0);
 	t.is(m(moment().add(1, 'days').format('MM-DD-YYYY')), 1);
 });
+
+test('empty', t => {
+	const err = t.throws(() => {
+		m();
+	}, TypeError);
+	t.is(err.message, 'Expected a string, got nothing');
+});

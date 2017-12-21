@@ -2,6 +2,10 @@ const moment = require('moment');
 
 moment.suppressDeprecationWarnings = true;
 module.exports = (input, opts) => {
+	if (input === undefined || input === '') {
+		throw new TypeError('Expected a string, got nothing');
+	}
+
 	if (typeof input !== 'string') {
 		if (typeof input !== 'object' && (input.isMoment === undefined || !input.isMoment())) {
 			throw new TypeError(`Expected a string, got ${typeof input}`);
