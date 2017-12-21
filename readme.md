@@ -40,8 +40,7 @@ daysleft(christmas);
 
 #### date
 
-Type: `string` or `moment`
-
+Type: `string` or `moment`<br>
 Examples: `'12/24/2017'` or `moment('12/24/2017')`
 
 #### options
@@ -49,10 +48,14 @@ Examples: `'12/24/2017'` or `moment('12/24/2017')`
 ##### startDate
 
 Type: `string` or `moment`<br>
-Default: `today`
+Default: `today`<br>
 Examples: `'12/24/2017'` or `moment('12/24/2017')`
 
 Allows you to provide a different start date other than 'today'
+
+## Related
+
+- [daysleft-cli](https://github.com/qbolt/daysleft-cli) - CLI for this module
 
 ## License
 
