@@ -1,6 +1,6 @@
 {
   "name": "daysleft",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A module for getting the days left until a given date",
   "license": "MIT",
   "repository": "qbolt/daysleft",
