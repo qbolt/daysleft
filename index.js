@@ -1,5 +1,6 @@
 const moment = require('moment');
 
+moment.suppressDeprecationWarnings = true;
 module.exports = (input, opts) => {
 	if (typeof input !== 'string') {
 		if (typeof input !== 'object' && (input.isMoment === undefined || !input.isMoment())) {
