@@ -2,13 +2,17 @@ const moment = require('moment');
 
 module.exports = (input, opts) => {
 	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
+		if (typeof input !== 'object' && (input.isMoment === undefined || !input.isMoment())) {
+			throw new TypeError(`Expected a string, got ${typeof input}`);
+		}
 	}
 
 	opts = opts || {};
 
-	if (opts.startDate && typeof opts.startDate !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof opts.startDate}`);
+	if (opts.startDate && (typeof opts.startDate !== 'string')) {
+		if (typeof opts.startDate !== 'object' && (opts.startDate.isMoment === undefined || !opts.startDate.isMoment())) {
+			throw new TypeError(`Expected a string, got ${typeof opts.startDate}`);
+		}
 	}
 
 	const startDate = moment(opts.startDate || moment().format('YYYY-MM-DD'));

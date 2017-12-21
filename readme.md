@@ -6,17 +6,31 @@
 ## Install
 
 ```
-$ npm install daysleft
+$ npm install --save daysleft
 ```
 
 
 ## Usage
 
+
+#### Using `string`
 ```js
 /* Assuming 'today' is 12/24/2017 */
-const daysleft = require('daysleft');
+import daysleft from 'daysleft';
 
-daysleft('12/25/2017');
+const christmas = '12/25/2017';
+daysleft(christmas);
+//=> '1'
+```
+
+#### Using `moment`
+```js
+/* Assuming 'today' is 12/24/2017 */
+import moment from 'moment';
+import daysleft from 'daysleft';
+
+const christmas = moment('12/25/2017');
+daysleft(christmas);
 //=> '1'
 ```
 
@@ -26,16 +40,17 @@ daysleft('12/25/2017');
 
 #### date
 
-Type: `string`
+Type: `string` or `moment`
 
-'12/24/2017'
+Examples: `'12/24/2017'` or `moment('12/24/2017')`
 
 #### options
 
 ##### startDate
 
-Type: `string`<br>
+Type: `string` or `moment`<br>
 Default: `today`
+Examples: `'12/24/2017'` or `moment('12/24/2017')`
 
 Allows you to provide a different start date other than 'today'
 
